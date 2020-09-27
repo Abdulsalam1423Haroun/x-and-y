@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>x and y</title>
+</head>
+<body>
+    <div id="project"></div>
+    
+</body>
+<script>
+     function mouse(move)
+ {
+     let xpos = move.screenX;
+     let ypos = move.screenY;
+    
+       document.getElementById("project").innerHTML = xpos + ", " + ypos;
+
+
+        if(xpos < 1000){
+            document.body.style.backgroundColor = "green";
+        }
+}
+ document.onmousemove = mouse;
+</script>
+</html>
